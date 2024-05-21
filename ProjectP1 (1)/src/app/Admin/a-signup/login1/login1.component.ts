@@ -10,6 +10,7 @@ import { AdminAuth } from '../../../admin-auth';
 })
 export class Login1Component implements OnInit {
 passwordInput: any;
+  loginError: string | undefined;
   constructor(private adminAuthService: AdminAuthService, private router: Router) {}
 
   @ViewChild('loginText')
@@ -39,19 +40,23 @@ passwordInput: any;
 
   login(email: string, password: string): void {
     this.adminAuthService.login(email, password).subscribe(
-      (admins) => {
-        if (admins.length > 0) {
-          console.log('Login successful', admins[0]);
+      (loggedIn) => {
+        if (loggedIn) {
+          console.log('Login successful');
+          // Redirect to dashboard or desired page upon successful login
+          alert("Welcome To REVTASK")
+          this.router.navigate(['/AdminHome'])
+          
         } else {
-          console.warn('No matching user found');
+          this.loginError = 'Invalid email or password';
+          console.warn('Invalid email or password');
+          alert("Enter the Correct email or password")
+          // Show error message to the user
         }
       },
       (error) => {
         console.error('An error occurred while logging in', error);
       },
-      () => {
-        console.log('Login subscription completed');
-      }
     );
   }
   
