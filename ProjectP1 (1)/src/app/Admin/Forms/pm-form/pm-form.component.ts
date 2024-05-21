@@ -11,4 +11,14 @@ export class PmFormComponent {
     email: '',
     password: ''
   };
+
+
+  handleSubmit(){
+    if(!(this.userData.email&&this.userData.password&&this.userData.username)){
+    alert('You have missed some things');
+  }
+  else{
+    alert('You have done correctly for user')
+  }
+}
 }

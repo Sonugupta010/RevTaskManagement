@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -22,8 +22,12 @@ import { NavbarComponent } from './layout/navbar/navbar.component';
 import {PmLoginComponent} from './ProjectManager/PM-signup/login/login.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { PmFormComponent } from './Admin/Forms/pm-form/pm-form.component';
-import { UFormComponent } from './Admin/Forms/uform/uform.component'
-import { FormsModule } from '@angular/forms';
+import { UFormComponent } from './Admin/Forms/uform/uform.component';
+
+import { FormsModule } from '@angular/forms'; 
+
+import { Login1Component } from './Admin/a-signup/login1/login1.component'; 
+
 
 @NgModule({
   declarations: [
@@ -46,13 +50,18 @@ import { FormsModule } from '@angular/forms';
     NavbarComponent,
     PmLoginComponent,
     PmFormComponent,
-    UFormComponent
+    UFormComponent,
+    Login1Component
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

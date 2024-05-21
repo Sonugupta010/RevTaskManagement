@@ -13,7 +13,11 @@ export class UFormComponent {
   };
 
   handleSubmit(){
-    
-    alert('Form Submited for User');
+    if(!(this.userData.email&&this.userData.password&&this.userData.username)){
+    alert('You have missed some things');
   }
+  else{
+    alert('You have done correctly for user')
+  }
+}
 }
