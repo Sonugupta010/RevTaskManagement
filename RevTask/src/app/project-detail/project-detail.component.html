@@ -1,0 +1,47 @@
+<!-- <div *ngIf="project">
+    <h2>Project Details</h2>
+    <p><strong>Project ID:</strong> {{ project.projectId }}</p>
+    <p><strong>Project Name:</strong> {{ project.projectName }}</p>
+    <p><strong>Project Description:</strong> {{ project.projectDescription }}</p>
+    <p><strong>Client Name:</strong> {{ project.clientName }}</p>
+    <p><strong>Client Info:</strong> {{ project.clientInfo }}</p>
+    <p><strong>Assign Date:</strong> {{ project.assignDate }}</p>
+    <p><strong>Due Date:</strong> {{ project.dueDate }}</p>
+  </div> -->
+
+  <!-- <div class="project-details-container" *ngIf="project">
+    <h2>Project Details</h2>
+    <p class="Id"><strong>Project ID:</strong> {{ project.projectId }}</p>
+    <p class="projectName"><strong>Project Name:</strong> {{ project.projectName }}</p>
+    <p class="projectDescription"><strong>Project Description:</strong> {{ project.projectDescription }}</p>
+    <p class="projectClientName"><strong>Client Name:</strong> {{ project.clientName }}</p>
+    <p class="projectClientInfo"><strong>Client Info:</strong> {{ project.clientInfo }}</p>
+    <p class="projectNameAssignDate"><strong>Assign Date:</strong> {{ project.assignDate | date }}</p>
+    <p class="projectNameDueDate"><strong>Due Date:</strong> {{ project.dueDate | date }}</p>
+  </div>
+  <div class="elses" *ngIf="!project">
+    <p>No project found with the given ID.</p>
+  </div> -->
+
+
+  <style>
+    
+  </style>
+  
+  <div class="project-details-container" *ngIf="project">
+    <h2>Project Details</h2>
+    <p class="Id"><strong>Project ID:</strong> {{ project.projectId }}</p>
+    <p class="projectName"><strong>Project Name:</strong> {{ project.projectName }}</p>
+    <p class="projectDescription"><strong>Project Description:</strong> {{ project.projectDescription }}</p>
+    <p class="projectClientName"><strong>Client Name:</strong> {{ project.clientName }}</p>
+    <p class="projectClientInfo"><strong>Client Info:</strong> {{ project.clientInfo }}</p>
+    <p class="projectNameAssignDate"><strong>Assign Date:</strong> {{ project.assignDate | date }}</p>
+    <p class="projectNameDueDate"><strong>Due Date:</strong> {{ project.dueDate | date }}</p>
+  </div>
+  <div class="elses" *ngIf="!project">
+    <p>No project found with the given ID.</p>
+  </div>
+  
+  
+  
+  

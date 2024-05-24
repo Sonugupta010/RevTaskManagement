@@ -1,0 +1,155 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f0f4f8, #d9e2ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container for form */
+.form-container {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 500px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Form title */
+.form-container h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+  text-align: center;
+}
+
+/* Form labels */
+.form-container label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #555555;
+}
+
+/* Form inputs */
+.form-container input,
+.form-container select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  outline: none;
+}
+
+/* Form buttons */
+.form-container button {
+  width: 48%;
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-container button[type="submit"] {
+  background-color: #28a745;
+  color: #ffffff;
+  margin-right: 4%;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.form-container button[type="button"] {
+  background-color: #dc3545;
+  color: #ffffff;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+/* Additional styling for responsiveness */
+@media (max-width: 500px) {
+  .form-container {
+    padding: 20px;
+  }
+
+  .form-container label {
+    margin-bottom: 10px;
+  }
+
+  .form-container button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-field, .select-field {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.save-button, .cancel-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: #f44336;
+}
+
+.save-button:hover, .cancel-button:hover {
+  background-color: #45a049;
+}
+
+.save-button:disabled, .cancel-button:disabled {
+  background-color: #aaaaaa;
+  cursor: not-allowed;
+}

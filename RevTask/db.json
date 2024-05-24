@@ -1,0 +1,168 @@
+{
+  "tasks": [
+    {
+      "projectId": 1,
+      "taskId": 101,
+      "taskName": "Task 1",
+      "assignTo": "User A",
+      "assignDate": "2024-05-10",
+      "dueDate": "2024-06-15",
+      "priority": "low",
+      "status": "Open",
+      "id": "6383"
+    },
+    {
+      "projectId": 1,
+      "taskId": 102,
+      "taskName": "Task 1",
+      "assignTo": "User B",
+      "assignDate": "2024-05-05",
+      "dueDate": "2024-06-20",
+      "priority": "Medium",
+      "status": "In Progress",
+      "id": "7a88"
+    },
+    {
+      "projectId": 2,
+      "taskId": 103,
+      "taskName": "Task 1",
+      "assignTo": "User C",
+      "assignDate": "2024-05-21",
+      "dueDate": "2024-06-15",
+      "priority": "High",
+      "status": "Open",
+      "id": "b447"
+    },
+    {
+      "projectId": 3,
+      "taskId": 100,
+      "taskName": "Task 1",
+      "assignTo": "User D",
+      "assignDate": "2024-04-05",
+      "dueDate": "2024-06-20",
+      "priority": "Medium",
+      "status": "Completed",
+      "id": "f45b"
+    },
+    {
+      "id": "00d9",
+      "projectId": 0,
+      "taskId": 0,
+      "taskName": "",
+      "assignTo": "",
+      "assignDate": "2024-05-21T07:02:28.795Z",
+      "dueDate": "2024-05-21T07:02:28.795Z",
+      "priority": "Low",
+      "status": "Open"
+    },
+    {
+      "id": "ad68",
+      "projectId": 10,
+      "taskId": 0,
+      "taskName": "Rishab",
+      "assignTo": "Sonu",
+      "assignDate": "2010-09-02",
+      "dueDate": "2919-10-03",
+      "priority": "Low",
+      "status": "Completed"
+    },
+    {
+      "id": "fe9b",
+      "projectId": 11,
+      "taskId": 0,
+      "taskName": "Dancing",
+      "assignTo": "Praveena",
+      "assignDate": "2024-05-29",
+      "dueDate": "2024-05-27",
+      "priority": "High",
+      "status": "Open"
+    },
+    {
+      "id": "7c74",
+      "projectId": 56,
+      "taskId": 0,
+      "taskName": "FrontEnd",
+      "assignTo": "Rishabh",
+      "assignDate": "2010-10-10",
+      "dueDate": "1321-12-31",
+      "priority": "High",
+      "status": "In"
+    },
+    {
+      "id": "4aae",
+      "projectId": 1231,
+      "taskId": 18488,
+      "taskName": "BackEnd",
+      "assignTo": "Abdul",
+      "assignDate": "5531-03-04",
+      "dueDate": "3231-03-04",
+      "priority": "High",
+      "status": "Open"
+    },
+    {
+      "id": "9fec",
+      "projectId": 1,
+      "taskId": 101,
+      "taskName": "Spring Rest API",
+      "assignTo": "Sonu",
+      "assignDate": "2024-05-23",
+      "dueDate": "2024-05-28",
+      "priority": "High",
+      "status": "Open"
+    },
+    {
+      "id": "e598",
+      "projectId": 1,
+      "taskId": 12,
+      "taskName": "yfaafd",
+      "assignTo": "tharun",
+      "assignDate": "2024-05-23",
+      "dueDate": "2024-05-24",
+      "priority": "High",
+      "status": "Open"
+    },
+    {
+      "id": "53e0",
+      "projectId": 1,
+      "taskId": 1,
+      "taskName": "Spring Rest API",
+      "assignTo": "fathima",
+      "assignDate": "2024-05-24",
+      "dueDate": "2024-05-25",
+      "priority": "High",
+      "status": "Open"
+    }
+  ],
+  "projects": [
+    {
+      "projectId": 1,
+      "projectName": "Project Alpha",
+      "projectDescription": "Description of Project Alpha",
+      "clientName": "Client A",
+      "clientInfo": "Client A Info",
+      "assignDate": "2024-01-01",
+      "dueDate": "2024-01-15",
+      "id": "7662"
+    },
+    {
+      "projectId": 2,
+      "projectName": "Project Beta",
+      "projectDescription": "Description of Project Beta",
+      "clientName": "Client B",
+      "clientInfo": "Client B Info",
+      "assignDate": "2024-02-01",
+      "dueDate": "2024-02-15",
+      "id": "deb7"
+    },
+    {
+      "projectId": 3,
+      "projectName": "Project Gamma",
+      "projectDescription": "Description of Project Gamma",
+      "clientName": "Client C",
+      "clientInfo": "Client C Info",
+      "assignDate": "2024-03-01",
+      "dueDate": "2024-03-15",
+      "id": "3ea1"
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+
+ body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.project-details-container {
+  width: 90%;
+  max-width: 600px;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-left: 300px;
+  margin-top: 100px;
+}
+
+.project-details-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+.project-details-container h2 {
+  text-align: center;
+  color: #6c63ff;
+  margin-bottom: 20px;
+  font-size: 28px;
+  position: relative;
+}
+
+.project-details-container h2::after {
+  content: '';
+  width: 50px;
+  height: 3px;
+  background: #6c63ff;
+  display: block;
+  margin: 10px auto 0;
+}
+
+.project-details-container p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.project-details-container p:hover {
+  background: #f1f1f1;
+  transform: translateX(10px);
+}
+
+
+.project-details-container p strong {
+  color: #6c63ff;
+}
+
+
+.project-details-container .Id,
+.project-details-container .projectName,
+.project-details-container .projectDescription,
+.project-details-container .projectClientName,
+.project-details-container .projectClientInfo,
+.project-details-container .projectNameAssignDate,
+.project-details-container .projectNameDueDate {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.project-details-container .Id strong,
+.project-details-container .projectName strong,
+.project-details-container .projectDescription strong,
+.project-details-container .projectClientName strong,
+.project-details-container .projectClientInfo strong,
+.project-details-container .projectNameAssignDate strong,
+.project-details-container .projectNameDueDate strong {
+  flex-basis: 150px;
+}
+
+
+.elses {
+  text-align: center;
+  font-size: 18px;
+  color: #ff6b6b;
+  margin-top: 50px;
+} 
+
+
+.project-details-container {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.project-details-container h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+.project-details-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.project-details-container strong {
+  color: #555;
+}
+.Id {
+  color: #4CAF50;
+}
+.projectName {
+  color: #2196F3;
+}
+.projectDescription {
+  color: #9C27B0;
+}
+.projectClientName {
+  color: #FF5722;
+}
+.projectClientInfo {
+  color: #FFC107;
+}
+.projectNameAssignDate, .projectNameDueDate {
+  color: #607D8B;
+}
+.elses {
+  text-align: center;
+  color: #757575;
+}

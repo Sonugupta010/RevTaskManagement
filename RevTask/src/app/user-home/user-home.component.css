@@ -1,0 +1,16 @@
+.user-home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .user-home h1 {
+    margin-bottom: 20px;
+  }
+  
+  .user-home p {
+    margin: 10px 0;
+  }
+  .bg-color{
+    color: #41bee4;
+
+  }
