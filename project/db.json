@@ -1,0 +1,178 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Project 1",
+      "description": "Description for Project 1",
+      "clientName": "Client A",
+      "dueDate": "2024-05-21T00:00:00.000Z",
+      "assignedDate": "2024-05-01T00:00:00.000Z",
+      "teamMembers": [
+        {
+          "id": 201,
+          "name": "John Doe",
+          "role": "Developer"
+        },
+        {
+          "id": 202,
+          "name": "Jane Smith",
+          "role": "Tester"
+        },
+        {
+          "id": 203,
+          "name": "Alice Johnson",
+          "role": "Database Administrator"
+        },
+        {
+          "id": 204,
+          "name": "Bob Brown",
+          "role": "Backend Developer"
+        },
+        {
+          "id": 205,
+          "name": "Charlie Davis",
+          "role": "Front-End Developer"
+        },
+        {
+          "id": 206,
+          "name": "Rishab",
+          "role": "Analyst"
+        },
+        {
+          "id": 207,
+          "name": "Neha",
+          "role": "Front-End Developer"
+        }
+      ],
+      "tasks": [
+        {
+          "id": 101,
+          "name": "Implement Authentication",
+          "description": "Develop user authentication using JWT and OAuth.",
+          "assignedTo": 201
+        },
+        {
+          "id": 102,
+          "name": "Setup CI/CD Pipeline",
+          "description": "Configure Continuous Integration and Continuous Deployment pipeline using Jenkins.",
+          "assignedTo": 202
+        },
+        {
+          "id": 103,
+          "name": "Database Optimization",
+          "description": "Optimize database queries and indexing for better performance.",
+          "assignedTo": 203
+        },
+        {
+          "id": 104,
+          "name": "API Development",
+          "description": "Develop RESTful APIs for the new mobile app.",
+          "assignedTo": 204
+        },
+        {
+          "id": 105,
+          "name": "Front-End Refactor",
+          "description": "Refactor the front-end codebase to improve maintainability and performance.",
+          "assignedTo": 205
+        },
+        {
+          "id": 108,
+          "name": "Admin Page",
+          "description": "create admin page",
+          "assignedTo": "206"
+        },
+        {
+          "id": 109,
+          "name": "login page",
+          "description": "This is login page ",
+          "assignedTo": "207"
+        },
+        {
+          "id": 110,
+          "name": "Database creation",
+          "description": "Table creatiion",
+          "assignedTo": "203"
+        },
+        {
+          "id": 1,
+          "name": "login page",
+          "description": "create home page",
+          "assignedTo": "204"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Project 2",
+      "description": "Description for Project 2",
+      "clientName": "Client B",
+      "dueDate": "2024-12-31T00:00:00.000Z",
+      "assignedDate": "2024-06-01T00:00:00.000Z",
+      "teamMembers": [
+        {
+          "id": 201,
+          "name": "John Doe",
+          "role": "Developer"
+        },
+        {
+          "id": 202,
+          "name": "Jane Smith",
+          "role": "Tester"
+        },
+        {
+          "id": 203,
+          "name": "Alice Johnson",
+          "role": "Database Administrator"
+        },
+        {
+          "id": 204,
+          "name": "Bob Brown",
+          "role": "Backend Developer"
+        },
+        {
+          "id": 210,
+          "name": "Praveena",
+          "role": "Developer"
+        }
+      ],
+      "tasks": [
+        {
+          "id": 201,
+          "name": "Setup Database",
+          "description": "Configure the database for the project.",
+          "assignedTo": 201
+        },
+        {
+          "id": 202,
+          "name": "Create UI Mockups",
+          "description": "Design the UI mockups for the project.",
+          "assignedTo": 202
+        },
+        {
+          "id": 203,
+          "name": "Integration Testing",
+          "description": "Perform integration testing on all modules.",
+          "assignedTo": 203
+        },
+        {
+          "id": 204,
+          "name": "Backend Optimization",
+          "description": "Optimize backend services for performance.",
+          "assignedTo": 204
+        },
+        {
+          "id": 1,
+          "name": "project Manager",
+          "description": "create project Manager",
+          "assignedTo": "210"
+        },
+        {
+          "id": 1,
+          "name": "Home page",
+          "description": "create home page",
+          "assignedTo": "201"
+        }
+      ]
+    }
+  ]
+}
