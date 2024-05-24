@@ -1,0 +1,227 @@
+<!-- <h2>Dashboard</h2>
+<button class="create-task" (click)="openCreateTaskModal()">Create Task</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project ID</th>
+      <th>Task ID</th>
+      <th>Task Name</th>
+      <th>Assign To</th>
+      <th>Assign Date</th>
+      <th>Due Date</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.projectId }}</td>
+      <td>{{ task.taskId }}</td>
+      <td>{{ task.taskName }}</td>
+      <td>{{ task.assignTo }}</td>
+      <td>{{ task.assignDate | date }}</td>
+      <td>{{ task.dueDate | date }}</td>
+      <td>{{ task.priority }}</td>
+      <td>
+        <span class="status" [ngClass]="{'open': task.status === 'Open', 'closed': task.status === 'Closed'}">{{ task.status }}</span>
+      </td>
+      <td>
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<app-edit-task-modal *ngIf="showEditTaskModal" [task]="selectedTask" (close)="closeEditTaskModal($event)"></app-edit-task-modal>
+<app-change-status-modal *ngIf="showChangeStatusModal" [task]="selectedTask" (close)="closeChangeStatusModal($event)"></app-change-status-modal>
+<app-create-task-modal *ngIf="showCreateTaskModal" (close)="closeCreateTaskModal($event)"></app-create-task-modal> -->
+
+
+<!-- <h2>Dashboard</h2>
+<button class="create-task" (click)="openCreateTaskModal()">Create Task</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>Project ID</th>
+      <th>Task ID</th>
+      <th>Task Name</th>
+      <th>Assign To</th>
+      <th>Assign Date</th>
+      <th>Due Date</th>
+      <th>Priority</th>
+      <th>Status</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let task of tasks">
+      <td>{{ task.projectId }}</td>
+      <td>{{ task.taskId }}</td>
+      <td>{{ task.taskName }}</td>
+      <td>{{ task.assignTo }}</td>
+      <td>{{ task.assignDate | date }}</td>
+      <td>{{ task.dueDate | date }}</td>
+      <td>{{ task.priority }}</td>
+      <td>
+        <span class="status" [ngClass]="{
+          'open': task.status === 'Open', 
+          'in-progress': task.status === 'In Progress', 
+          'completed': task.status === 'Completed'
+        }">{{ task.status }}</span>
+      </td>
+      <td>
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<app-edit-task-modal *ngIf="showEditTaskModal" [task]="selectedTask" (close)="closeEditTaskModal($event)"></app-edit-task-modal>
+<app-change-status-modal *ngIf="showChangeStatusModal" [task]="selectedTask" (close)="closeChangeStatusModal($event)"></app-change-status-modal>
+<app-create-task-modal *ngIf="showCreateTaskModal" (close)="closeCreateTaskModal($event)"></app-create-task-modal> -->
+
+
+<!-- <h2>Dashboard</h2>
+<button class="create-task" (click)="openCreateTaskModal()">Create Task</button>
+
+<div class="task-grid">
+  <div class="column">
+    <h3>Open</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'Open'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3>In Progress</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'In Progress'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3>Completed</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'Completed'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> {{ task.status }}</p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-edit-task-modal *ngIf="showEditTaskModal" [task]="selectedTask" (close)="closeEditTaskModal($event)"></app-edit-task-modal>
+<app-change-status-modal *ngIf="showChangeStatusModal" [task]="selectedTask" (close)="closeChangeStatusModal($event)"></app-change-status-modal>
+<app-create-task-modal *ngIf="showCreateTaskModal" (close)="closeCreateTaskModal($event)"></app-create-task-modal> -->
+
+<h2 id="dashboard">Dashboard</h2>
+<button class="create-task" (click)="openCreateTaskModal()">+ Create Task</button>
+
+<div class="task-grid">
+  <div class="column">
+    <h3 id="open">Open</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'Open'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> <span class="status" [ngClass]="task.status">{{ task.status }}</span></p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3 class="in-progress">In Progress</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'In Progress'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> <span class="status" [ngClass]="task.status">{{ task.status }}</span></p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <h3 id="completed">Completed</h3>
+    <div class="task" *ngFor="let task of tasks" [ngClass]="{'hidden': task.status !== 'Completed'}">
+      <div class="task-details">
+        <p><strong>Project ID:</strong> {{ task.projectId }}</p>
+        <p><strong>Task ID:</strong> {{ task.taskId }}</p>
+        <p><strong>Task Name:</strong> {{ task.taskName }}</p>
+        <p><strong>Assign To:</strong> {{ task.assignTo }}</p>
+        <p><strong>Assign Date:</strong> {{ task.assignDate | date }}</p>
+        <p><strong>Due Date:</strong> {{ task.dueDate | date }}</p>
+        <p><strong>Priority:</strong> {{ task.priority }}</p>
+        <p><strong>Status:</strong> <span class="status" [ngClass]="task.status">{{ task.status }}</span></p>
+      </div>
+      <div class="task-actions">
+        <button class="edit-task" (click)="openEditTaskModal(task)">Edit</button>
+        <button class="change-status" (click)="openChangeStatusModal(task)">Change Status</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-edit-task-modal *ngIf="showEditTaskModal" [task]="selectedTask" (close)="closeEditTaskModal($event)"></app-edit-task-modal>
+<app-change-status-modal *ngIf="showChangeStatusModal" [task]="selectedTask" (close)="closeChangeStatusModal($event)"></app-change-status-modal>
+<app-create-task-modal *ngIf="showCreateTaskModal" (close)="closeCreateTaskModal($event)"></app-create-task-modal>
+
+

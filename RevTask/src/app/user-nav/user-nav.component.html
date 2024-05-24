@@ -1,0 +1,45 @@
+
+
+
+
+ <!-- <div class="user-home">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item"><a routerLink="/user-nav/user-home">Home</a></li>
+      
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/user-nav/user-dashboard']" (click) = "redirect()">Dashboard</a>
+      </li>
+
+      <li>
+        <a>Projects</a>
+        <select (change)="onProjectSelect($event)">
+          <option *ngFor="let project of projects" [value]="project.projectId">{{ project.projectName }}</option>
+        </select>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </nav> -->
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item"><a routerLink="/user-nav/user-home">Home</a></li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/user-nav/user-dashboard']" (click)="redirect()">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a>Projects</a>
+        <select (change)="onProjectSelect($event)">
+          <option *ngFor="let project of projects" [value]="project.projectId">{{ project.projectName }}</option>
+        </select>
+      </li>
+      <li class="nav-item logout">
+        <a class="nav-link" (click)="logout()">Logout</a>
+      </li>
+    </ul>
+  </nav>
+  <router-outlet></router-outlet>
+  
+  
