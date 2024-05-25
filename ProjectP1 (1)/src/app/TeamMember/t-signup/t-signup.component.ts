@@ -40,6 +40,7 @@ switchToLoginAd() {
 
 
   redirect() {
-    this.router.navigate([' ']);
+    this.router.navigate(['/tHome']);
   }  
+  
 }
