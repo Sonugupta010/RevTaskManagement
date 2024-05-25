@@ -45,4 +45,6 @@ export class AdminAuthService {
     return this.http.post<AdminAuth>(this.apiUrl, adminData)
       
   }
+
+ 
 }

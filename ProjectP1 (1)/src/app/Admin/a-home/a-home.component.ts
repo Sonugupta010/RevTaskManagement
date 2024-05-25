@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { project } from '../../admin-auth';
+import { ProjectService } from '../../project.service';
 
 @Component({
   selector: 'app-a-home',
@@ -8,22 +10,17 @@ import { Router } from '@angular/router';
  
 })
 export class AHomeComponent {
-  constructor(private router: Router) {}
+  projects: project[] = [];
 
+  constructor(private projectService: ProjectService, private route:Router) {}
 
-  logout(){
-    this.router.navigate(['']);
+  fetchProjects(): void {
+    this.route.navigate(['/AdminProjects']);
+
+  }
+  fetchTask():void{
+    this.route.navigate(['/AdminTasks'])
   }
 
-  handleHome(){
-    this.router.navigate(['/AdminHome'])
-  }
-
-
-  
-
- 
-  
-  
   
 }
