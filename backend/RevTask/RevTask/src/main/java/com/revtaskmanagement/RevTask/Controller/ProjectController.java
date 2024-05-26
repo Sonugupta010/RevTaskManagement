@@ -1,5 +1,6 @@
 package com.revtaskmanagement.RevTask.Controller;
 
+import com.revtaskmanagement.RevTask.DTO.ProjectDTO;
 import com.revtaskmanagement.RevTask.Entity.Project;
 import com.revtaskmanagement.RevTask.Service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,13 +16,13 @@ public class ProjectController {
     private ProjectService projectService;
 
     @GetMapping
-    public List<Project> getAllProjects() {
+    public List<ProjectDTO> getAllProjects() {
         return projectService.getAllProjects();
     }
 
     @GetMapping("/{id}")
-    public Project getProjectById(@PathVariable Long id) {
-        return projectService.getProjectById(id);
+    public ProjectDTO getProjectById(@PathVariable Long id) {
+        return projectService.getProjectDTOById(id);
     }
 
     @PostMapping
@@ -34,7 +35,7 @@ public class ProjectController {
         return projectService.updateProject(id, projectDetails);
     }
 
-    @DeleteMapping("/{id}")
+   @DeleteMapping("/{id}")
     public void deleteProject(@PathVariable Long id) {
         projectService.deleteProject(id);
     }
