@@ -28,6 +28,7 @@ public class AdminService {
         Admin admin = adminRepository.findById(id).orElseThrow();
         admin.setUsername(adminDetails.getUsername());
         admin.setPassword(adminDetails.getPassword());
+        admin.setEmail(adminDetails.getEmail());
         return adminRepository.save(admin);
     }
 

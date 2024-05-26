@@ -18,10 +18,12 @@ public class TeamMemberService {
     }
 
     public TeamMember getTeamMemberById(Long id) {
+
         return teamMemberRepository.findById(id).orElseThrow();
     }
 
     public TeamMember createTeamMember(TeamMember teamMember) {
+
         return teamMemberRepository.save(teamMember);
     }
 
@@ -29,10 +31,13 @@ public class TeamMemberService {
         TeamMember teamMember = teamMemberRepository.findById(id).orElseThrow();
         teamMember.setUsername(teamMemberDetails.getUsername());
         teamMember.setPassword(teamMemberDetails.getPassword());
+        teamMember.setEmail(teamMemberDetails.getEmail());
+        teamMember.setRole(teamMemberDetails.getRole());
         return teamMemberRepository.save(teamMember);
     }
 
     public void deleteTeamMember(Long id) {
+
         teamMemberRepository.deleteById(id);
     }
 }

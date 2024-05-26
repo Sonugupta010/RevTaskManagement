@@ -28,6 +28,7 @@ public class ProjectManagerService {
         ProjectManager projectManager = projectManagerRepository.findById(id).orElseThrow();
         projectManager.setUsername(projectManagerDetails.getUsername());
         projectManager.setPassword(projectManagerDetails.getPassword());
+        projectManager.setEmail(projectManagerDetails.getEmail());
         return projectManagerRepository.save(projectManager);
     }
 
